@@ -1,0 +1,89 @@
+{
+    "info": {
+        "name": "Citizen Services Portal API Tests",
+        "_postman_id": "1234-5678-91011",
+        "description": "API tests for login, apply service, and get application status.",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Login",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"username\": \"user1\", \"password\": \"Pass123\"}"
+                },
+                "url": {
+                    "raw": "http://citizenportal.test/api/login",
+                    "protocol": "http",
+                    "host": [
+                        "citizenportal",
+                        "test"
+                    ],
+                    "path": [
+                        "api",
+                        "login"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Apply Service",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"service\": \"housing\", \"details\": \"Apply for housing support\"}"
+                },
+                "url": {
+                    "raw": "http://citizenportal.test/api/applyService",
+                    "protocol": "http",
+                    "host": [
+                        "citizenportal",
+                        "test"
+                    ],
+                    "path": [
+                        "api",
+                        "applyService"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Application Status",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://citizenportal.test/api/getApplicationStatus/5001",
+                    "protocol": "http",
+                    "host": [
+                        "citizenportal",
+                        "test"
+                    ],
+                    "path": [
+                        "api",
+                        "getApplicationStatus",
+                        "5001"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}
