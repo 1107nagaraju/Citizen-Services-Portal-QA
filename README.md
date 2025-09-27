@@ -29,13 +29,16 @@ Citizen-Services-Portal-QA/
 ├── TestPlan/
 │ └── TestPlan_CitizenPortal.docx
 ├── TestCases/
-│ └── TestCases_CitizenPortal.xlsx
+│ └── TestCases_CitizenPortal.xlsx 
 ├── BugReports/
 │ └── BugReports_CitizenPortal.xlsx
 ├── TestSummary/
 │ └── TestSummaryReport_CitizenPortal.docx
 ├── SQL_Validation/
-│ └── SQL_Validation_Scripts.sql
+│  ├── Create_Tables.sql
+   ├── SQL_Validation_Scripts.sql
+   ├── SQL_TestCases.xlsx
+   └── SQL_Query_Result.png   (screenshot from DbGate/MySQL after running queries)
 ├── API_Tests/
 │ └── CitizenPortal_API_Tests.postman_collection.json
 ├── AutomationScripts/
